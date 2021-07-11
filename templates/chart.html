@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Product Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+
+    <form action="http://localhost:6300/chart" method="post" >
+    <div>
+       <div class="col-xs-6 col-sm-2" >
+            <h4 >Select Product key :</h4>
+              <select name="id1" class="form-control" id="sel1">
+                  {% for key in keys %}
+                  <option value= "{{key}}" SELECTED>{{key}}</option>"
+                     {% endfor %}
+              </select>
+              <br>
+            <div class="col-xs-6 col-sm-2" >
+             <input type="submit" value="Submit" class="btn btn-success">
+        </div>
+
+    </div>
+    </div>
+    </form>
+
+
+
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

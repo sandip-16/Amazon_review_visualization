@@ -1,0 +1,267 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+p {
+  line-height: 1.55;
+  color: #333;
+  font-size: 400;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 62px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 65px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+/* ==================================================
+  General
+  ================================================== */
+
+a {
+  transition: 0.5s;
+}
+
+/* ==================================================
+  Elements
+  ================================================== */
+
+.btn {
+  background-color: #199EB8;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: #E04F00;
+  color: #fff;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+
+section {
+  padding: 85px 0;
+}
+
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
+
+
+.hero {
+  display: table;
+  position: relative;
+  background-image:url("./dash.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.hero-brand {
+  margin-bottom: 75px;
+  display: inline-block;
+}
+
+.hero-brand:hover {
+  opacity: .75;
+}
+
+.tagline {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  margin: 45px 0 75px 0;
+  color: #fff;
+}
+
+/* ==================================================
+  Header Styling
+================================================== */
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* ==================================================
+  Responsive Styling
+  ================================================== */
+
+@media (max-width: 768px) {
+  #header {
+    height: 50px;
+  }
+
+  #header #logo {
+    margin: 10px 0 0 0;
+  }
+
+  #header #logo h1 {
+    padding: 2px 0;
+    font-size: 26px;
+  }
+
+  #header #logo img {
+    max-height: 30px;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 61.9em) {
+  section,
+  .block,
+  .cta {
+    padding: 35px 0;
+  }
+
+  .features {
+    padding-bottom: 5px;
+  }
+
+  p,
+  .block p {
+    margin: 0;
+  }
+
+  .hero-brand {
+    margin-bottom: 35px;
+  }
+
+  .tagline {
+    margin: 35px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  h2,
+  .tagline {
+    font-size: 24px;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 75px 0;
+  }
+
+  .stats-col {
+    margin-bottom: 25px;
+  }
+
+  .block {
+    height: auto;
+  }
+
+  .feature-col {
+    padding-bottom: 30px;
+  }
+
+  .portfolio-grid .card h3.card-title {
+    font-size: 18px !important;
+  }
+
+  .portfolio-grid .card .card-text {
+    font-size: 13px;
+  }
+
+  .team .team-over {
+    padding-top: 20px;
+  }
+
+  .team .card .social-nav {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .site-footer .social-nav {
+    margin-bottom: 35px;
+  }
+
+  .site-footer .list-inline {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .site-footer .list-inline li {
+    display: inline-block;
+  }
+}
