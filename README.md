@@ -1,5 +1,7 @@
 # review_visualization
-Amazon product review analysis and visualization 
+Amazon product review analysis and visualization
+
+
 Technologies: Python, Flask , HTML, CSS, JINJA Framework, Mongodb Database, NLTK, Matplotlib
 
 - database contains two collections 
